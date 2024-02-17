@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://d121jyqawt726"]
+
+[ext_resource type="PackedScene" uid="uid://beerwmld366tx" path="res://scenes/jem.tscn" id="1_1hmbs"]
+
+[node name="Node" type="Node"]
+
+[node name="jem" parent="." instance=ExtResource("1_1hmbs")]

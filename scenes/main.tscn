@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://4braxhxdvf5r"]
+
+[ext_resource type="Script" path="res://scripts/game_control.gd" id="2_oxx1w"]
+[ext_resource type="Script" path="res://scripts/board.gd" id="3_ga16p"]
+[ext_resource type="Script" path="res://scripts/tile_factory.gd" id="4_3bagv"]
+[ext_resource type="Script" path="res://scripts/match_finder.gd" id="4_7eemi"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="game_control" type="Node" parent="."]
+script = ExtResource("2_oxx1w")
+
+[node name="tile_factory" type="Node2D" parent="game_control"]
+script = ExtResource("4_3bagv")
+
+[node name="board" type="Node2D" parent="game_control"]
+script = ExtResource("3_ga16p")
+
+[node name="match_finder" type="Node" parent="game_control/board"]
+script = ExtResource("4_7eemi")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(400, 300)
+zoom = Vector2(0.575, 0.575)

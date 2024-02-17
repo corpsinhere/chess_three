@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://vcvs5olx4wva"]
+
+[ext_resource type="Texture2D" uid="uid://blit1cax7v2ft" path="res://icons/tileGreen.png" id="1_nyp6h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bsf1o"]
+size = Vector2(128, 128)
+
+[node name="boarder_block" type="StaticBody2D"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="shape" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bsf1o")
+
+[node name="sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_nyp6h")
